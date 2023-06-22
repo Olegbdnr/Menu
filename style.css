@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: "Arial Black";
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,65,255,1) 0%, rgba(106,162,255,1) 100%, rgba(9,21,121,1) 100%);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: white;
+    width: 70rem;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+
+}
+
+.coffee-list {
+    list-style: outside;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.coffee-item {
+    min-width: 11rem;
+    margin: 2rem;
+}
+
+.tittle {
+    margin-bottom: 0.2rem;
+}
+
+.ingredient {
+    font-size: 0.9rem;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuButton {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    background-color: white;
+    border-radius: 100rem;
+    transition: 0.2s ease-out;
+}
+
+.menuButton.touched{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0;
+    background-color: blue;
+    color: white;
+    border-radius: 100rem;
+    transition: 0.2s ease-out;
+}
+
+.menuButton:hover {
+    background-color: blue;
+    color: white;
+}
